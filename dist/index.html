@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reel — test player</title>
+  <script type="module" crossorigin src="/assets/index-D8TAKBbL.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BOB-WbBC.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">reel<span>.</span></div>
+  <div class="search-wrap">
+    <input id="search" type="text" placeholder="Search movies…" autocomplete="off" />
+  </div>
+  <button class="key-btn" id="key-btn" hidden>TMDB key</button>
+</header>
+
+<main>
+  <div id="search-results"></div>
+  <div class="section-title" id="popular-title">Popular right now</div>
+  <div class="grid" id="popular-grid"></div>
+</main>
+
+<div id="player-overlay">
+  <div class="player-bar">
+    <div class="player-title" id="player-title"></div>
+    <button class="close-btn" id="close-player">Close ✕</button>
+  </div>
+  <div id="player-frame-wrap"></div>
+</div>
+
+<div id="key-modal">
+  <div class="modal-box">
+    <h2>TMDB API key</h2>
+    <p>No VITE_TMDB_API_KEY env var found. Paste a key for local testing — it's stored only in this browser's localStorage.</p>
+    <input id="key-input" type="text" placeholder="TMDB v4 read access token or v3 API key" />
+    <button class="save" id="key-save">Save</button>
+  </div>
+</div>
+
+</body>
+</html>
