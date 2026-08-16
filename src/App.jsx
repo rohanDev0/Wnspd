@@ -72,7 +72,7 @@ function Watch({ movieId, onBack }) {
       <div className="player">
         <iframe
           title="Movie Player"
-          src={`https://vidfast.vc/movie/${movieId}`}
+          src={`https://vidfast.vc/movie/${movieId}?theme=16A085&autoPlay=true`}
           allowFullScreen
           allow="encrypted-media"
         />
